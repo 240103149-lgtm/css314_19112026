@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "status": "executed_on_real_gpu",
+  "github_username": "240103149-lgtm",
+  "INSTANCE_SEED": 810338268274559305,
+  "cpu": {
+    "signature": "007747946296af6d53f2da0c07cf02d465ba1f8f4739b56cb539696c95b108c0",
+    "topology": {
+      "lscpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU op-mode(s):",
+          "data": "32-bit, 64-bit"
+        },
+        {
+          "field": "Address sizes:",
+          "data": "46 bits physical, 48 bits virtual"
+        },
+        {
+          "field": "Byte Order:",
+          "data": "Little Endian"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "2"
+        },
+        {
+          "field": "On-line CPU(s) list:",
+          "data": "0,1"
+        },
+        {
+          "field": "Vendor ID:",
+          "data": "GenuineIntel"
+        },
+        {
+          "field": "Model name:",
+          "data": "Intel(R) Xeon(R) CPU @ 2.00GHz"
+        },
+        {
+          "field": "CPU family:",
+          "data": "6"
+        },
+        {
+          "field": "Model:",
+          "data": "85"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "1"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Stepping:",
+          "data": "3"
+        },
+        {
+          "field": "BogoMIPS:",
+          "data": "4000.27"
+        },
+        {
+          "field": "Flags:",
+          "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat md_clear arch_capabilities"
+        },
+        {
+          "field": "Hypervisor vendor:",
+          "data": "KVM"
+        },
+        {
+          "field": "Virtualization type:",
+          "data": "full"
+        },
+        {
+          "field": "L1d cache:",
+          "data": "32 KiB (1 instance)"
+        },
+        {
+          "field": "L1i cache:",
+          "data": "32 KiB (1 instance)"
+        },
+        {
+          "field": "L2 cache:",
+          "data": "1 MiB (1 instance)"
+        },
+        {
+          "field": "L3 cache:",
+          "data": "38.5 MiB (1 instance)"
+        },
+        {
+          "field": "NUMA node(s):",
+          "data": "1"
+        },
+        {
+          "field": "NUMA node0 CPU(s):",
+          "data": "0,1"
+        },
+        {
+          "field": "Vulnerability Gather data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Indirect target selection:",
+          "data": "Vulnerable"
+        },
+        {
+          "field": "Vulnerability Itlb multihit:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability L1tf:",
+          "data": "Mitigation; PTE Inversion"
+        },
+        {
+          "field": "Vulnerability Mds:",
+          "data": "Vulnerable; SMT Host state unknown"
+        },
+        {
+          "field": "Vulnerability Meltdown:",
+          "data": "Vulnerable"
+        },
+        {
+          "field": "Vulnerability Mmio stale data:",
+          "data": "Vulnerable"
+        },
+        {
+          "field": "Vulnerability Reg file data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Retbleed:",
+          "data": "Vulnerable"
+        },
+        {
+          "field": "Vulnerability Spec rstack overflow:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Spec store bypass:",
+          "data": "Vulnerable"
+        },
+        {
+          "field": "Vulnerability Spectre v1:",
+          "data": "Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers"
+        },
+        {
+          "field": "Vulnerability Spectre v2:",
+          "data": "Vulnerable; IBPB: disabled; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Vulnerable"
+        },
+        {
+          "field": "Vulnerability Srbds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsa:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsx async abort:",
+          "data": "Vulnerable"
+        },
+        {
+          "field": "Vulnerability Vmscape:",
+          "data": "Not affected"
+        }
+      ]
+    },
+    "cache_line_bytes": 64,
+    "logical_cpus": 2,
+    "architecture": "x86_64"
+  },
+  "gpu": {
+    "name": "Tesla T4",
+    "uuid": "GPU-639848cb-ba85-af70-c282-e9deed9ac09b",
+    "compute_capability": "7.5"
+  },
+  "ranks": [
+    {
+      "rank": 0,
+      "coords": [
+        0,
+        0
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "shared_base_mod_64": 0
+    },
+    {
+      "rank": 1,
+      "coords": [
+        0,
+        1
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "shared_base_mod_64": 0
+    },
+    {
+      "rank": 2,
+      "coords": [
+        1,
+        0
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "shared_base_mod_64": 0
+    },
+    {
+      "rank": 3,
+      "coords": [
+        1,
+        1
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "shared_base_mod_64": 0
+    }
+  ],
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "numpy": "2.4.6",
+  "numba": "0.64.0",
+  "mpi4py": "4.1.2",
+  "mpi_library": "Open MPI v4.1.6, package: Debian OpenMPI, ident: 4.1.6, repo rev: v4.1.6, Sep 30, 2023\u0000",
+  "global_shape": [
+    512,
+    512
+  ],
+  "local_shape": [
+    258,
+    258
+  ],
+  "steps": 300,
+  "boundary_condition": "homogeneous Dirichlet",
+  "diffusivity": "conservative face average",
+  "source": "0.01*(1+0.2*cos(2*pi*x+phase)*cos(2*pi*y))",
+  "dx": 0.001949317738791423,
+  "kappa_max": 0.12499985603552494,
+  "dt": 6.839711444642156e-06,
+  "dt_max": 7.599688046214613e-06,
+  "courant_ratio": 0.8999989740432833,
+  "lambda_damp": 0.15,
+  "max_diff": 0.0,
+  "gpu_serialized_ms": 1675.458197,
+  "gpu_overlapped_ms": 2042.7412410000004,
+  "overlap_speedup": 0.8202008964090816,
+  "timing_scope": "max-rank synchronized wall time; warmup and diagnostics excluded",
+  "serialized_energy": [
+    {
+      "step": 0,
+      "mass": 0.4074342718652349,
+      "energy_l2": 0.12806495589928038
+    },
+    {
+      "step": 100,
+      "mass": 0.4068610730954346,
+      "energy_l2": 0.12769544584671702,
+      "global_heat_balance_abs_residual": 1.4781571962534795e-17
+    },
+    {
+      "step": 200,
+      "mass": 0.40628852142699234,
+      "energy_l2": 0.12732705920905027,
+      "global_heat_balance_abs_residual": 3.48310535822809e-17
+    },
+    {
+      "step": 300,
+      "mass": 0.40571666488169633,
+      "energy_l2": 0.12695979030196664,
+      "global_heat_balance_abs_residual": 1.2069160707189712e-17
+    }
+  ],
+  "overlapped_energy": [
+    {
+      "step": 0,
+      "mass": 0.4074342718652349,
+      "energy_l2": 0.12806495589928038
+    },
+    {
+      "step": 100,
+      "mass": 0.4068610730954346,
+      "energy_l2": 0.12769544584671702,
+      "global_heat_balance_abs_residual": 1.4781571962534795e-17
+    },
+    {
+      "step": 200,
+      "mass": 0.40628852142699234,
+      "energy_l2": 0.12732705920905027,
+      "global_heat_balance_abs_residual": 3.48310535822809e-17
+    },
+    {
+      "step": 300,
+      "mass": 0.40571666488169633,
+      "energy_l2": 0.12695979030196664,
+      "global_heat_balance_abs_residual": 1.2069160707189712e-17
+    }
+  ],
+  "ptx_audit": {
+    "st.shared.f64": 8,
+    "ld.shared.f64": 5,
+    "bar.sync": 1,
+    "shared_stores_any_64bit": 11,
+    "shared_loads_any_64bit": 5,
+    "sha256": "49928782c63b8e191a58f5782c79f83e34625b5fd4b19f53e59c881ae02e6228"
+  },
+  "llvm_audit": {
+    "volatile_load_i64": 9,
+    "volatile_store_i64": 9,
+    "sha256": "00e085bd0c5f0b1214d869c4da9a854f1b8cb221654b5ce54bf893aed219c397"
+  },
+  "shm_iterations": 40000000,
+  "shm_repeats": 3,
+  "shm_benchmark": {
+    "1": {
+      "spacing_bytes": 8,
+      "samples_ms": [
+        408.1263980000003,
+        394.7064899999999,
+        423.35113000000035
+      ],
+      "median_ms": 408.1263980000003
+    },
+    "8": {
+      "spacing_bytes": 64,
+      "samples_ms": [
+        300.38860600000027,
+        244.1533869999999,
+        272.47107600000044
+      ],
+      "median_ms": 272.47107600000044
+    },
+    "16": {
+      "spacing_bytes": 128,
+      "samples_ms": [
+        231.74559100000013,
+        254.07062199999953,
+        301.5936499999992
+      ],
+      "median_ms": 254.07062199999953
+    },
+    "false_sharing_ratio_1_over_8": 1.4978705409450492,
+    "padding_ratio_8_over_16": 1.0724225959505107
+  },
+  "source_sha256": "fce9848935b9e6d0663c3c9ef1f23fdbe58f08b10f2298a542680826d885ff70"
+}
